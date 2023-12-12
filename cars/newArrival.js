@@ -28,6 +28,7 @@ const newArrival = [
     },
     availability: true,
   },
+  
   {
     id: 2,
     model: "G_guard",

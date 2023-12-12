@@ -11,12 +11,13 @@ const port = 4000;
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 // const car = require('./Model/cars');
-const newArrival = require('./NewArrival/newArrival');
+const newArrival = require('./cars/newArrival');
+const allCars = require('./cars/allCars');
 const ProductRoutes = require('./Routes/productRoutes');
 
 
 require('dotenv').config()
-require('./config/database')
+// require('./config/database')
 
 app.use(
   "/NewArrivalCarImage",
@@ -82,32 +83,9 @@ app.post("/login", (req, res) => {
     })
   })
 
-app.post('/submit-message',async(req,res)=>{
-  const {fullName,email,message}=req.body;
-
-  const transporter = nodemailer.createTransport({
-    service:'gmail',
-    auth:{
-      user:'mgbemenaosonduv@gmail.com',
-      pass:'09077955363'
-    }
-  });
-
-  const mailOptions ={
-    from:'aztop29@gmail.com',
-    to:'aztop29@gmail.com',
-    subject:'new message from your website',
-    text: `name: ${fullName}\nEmail:${email}\nMessage:${message}`,
-  };
-
-  try{
-    await transporter.sendMail(mailOptions)
-    res.status(200).json({message:'Message sent successfully!'});
-  }catch(error){
-    console.error(error);
-    res.status(500).json({message:'Error sending message'})
-  }
-})
+  app.get('/allcars',(req,res)=>{
+    res.json(allCars);
+  })
 
 app.get("/newcars", (req, res) => {
   res.json(newArrival);
