@@ -1,5 +1,5 @@
 const express = require('express');
-// const mongoose = require('mongoose');
+const mongoose = require('mongoose');
 const cors = require('cors');
 const nodemailer = require('nodemailer')
 const bodyParser = require('body-parser');
@@ -19,6 +19,8 @@ const ProductRoutes = require('./Routes/productRoutes');
 require('dotenv').config()
 // require('./config/database')
 
+
+
 app.use(
   "/NewArrivalCarImage",
   express.static(path.join(__dirname, 'NewArrivalCarImage'))
@@ -30,35 +32,50 @@ app.use(bodyParser.json());
 app.use(cors())
 
 
-app.post("/login", (req, res) => {
-  const { email, password } = req.body;
-  registerModel
-    .findOne({ email: email })
-    .then((user) => {
-      if (user) {
-        if (user.password === password) {
-          res.json({ message: "successful", name: user.name });
-        } else {
-          res.json({ message: "invalid password" });
-        }
-      } else {
-        res.json({ message: "non existed record" });
-      }
-    })
-    .catch((err) => {
-      res.status(500).json({ message: "An error occurred" });
+const connectDB = async () => {
+  try {
+    console.log(`Connecting to MongoDB: ${process.env.DB_HOST}`);
+    const con = await mongoose.connect(process.env.DB_HOST, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
     });
-});
-  
-  app.post('/register',async(req,res)=>{
-    const {fullName,
-    Email,
-    UserName,
-    password,
-    country,
-    occupation,
-    Marital_status}=req.body
-    const hashedPassword = await bcrypt.hash(password,12);
+
+    con.connection.on("connected", () => {
+      console.log("MongoDB connected:", con.connection.host);
+    });
+
+    con.connection.on("error", (err) => {
+      console.error("MongoDB connection error:", err);
+    });
+
+    con.connection.on("disconnected", () => {
+      console.log("MongoDB disconnected");
+    });
+
+    console.log(`MongoDB connected: ${con.connection.host}`);
+  } catch (err) {
+    console.error("Error connecting to MongoDB:", err);
+    process.exit(1);
+  }
+};
+
+connectDB();
+
+
+app.post("/register", async (req, res) => {
+  try {
+    const {
+      fullName,
+      Email,
+      UserName,
+      password,
+      country,
+      occupation,
+      Marital_status,
+    } = req.body;
+
+    const hashedPassword = await bcrypt.hash(password, 12);
+
     const user = await registerModel.create({
       fullName,
       Email,
@@ -68,20 +85,44 @@ app.post("/login", (req, res) => {
       occupation,
       Marital_status,
     });
-    const token = jwt.sign(
-      {user_id:user._id},
-      process.env.JWT_SECRETE,
-      {
-        expiresIn:"5h",
-      }
-    )
 
-    res.status(201).json({
-      status:'success',
-      token,
-      user
-    })
-  })
+    const token = jwt.sign({ user_id: user._id }, process.env.JWT_SECRET, {
+      expiresIn: "5h",
+    });
+
+    res.json({ message: "Registration successful", token });
+  } catch (error) {
+    console.error("Error during registration:", error);
+    res
+      .status(500)
+      .json({
+        message: "An error occurred during registration",
+        error: error.message,
+      });
+  }
+});
+
+app.post("/login", async (req, res) => {
+  try {
+    const { Email, password } = req.body;
+
+    const user = await registerModel.findOne({ Email });
+
+    if (user) {
+      const passwordMatch = await bcrypt.compare(password, user.password);
+
+      if (passwordMatch) {
+        res.json({ message: "Login successful", name: user.fullName });
+      } else {
+        res.json({ message: "Invalid password" });
+      }
+    } else {
+      res.json({ message: "Nonexistent record" });
+    }
+  } catch (error) {
+    res.status(500).json({ message: "An error occurred during login" });
+  }
+});
 
   app.get('/allcars',(req,res)=>{
     res.json(allCars);
