@@ -86,21 +86,16 @@ app.post("/register", async (req, res) => {
       Marital_status,
     });
 
-    const token = jwt.sign({ user_id: user._id }, process.env.JWT_SECRET, {
+    const token = jwt.sign({ user_id: user._id }, process.env.JWT_SECRETE, {
       expiresIn: "5h",
     });
 
     res.json({ message: "Registration successful", token });
   } catch (error) {
-    console.error("Error during registration:", error);
-    res
-      .status(500)
-      .json({
-        message: "An error occurred during registration",
-        error: error.message,
-      });
+    res.status(500).json({ message: "An error occurred during registration" });
   }
 });
+
 
 app.post("/login", async (req, res) => {
   try {
