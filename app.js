@@ -67,11 +67,9 @@ app.post("/register", async (req, res) => {
     const {
       fullName,
       Email,
-      UserName,
+      userName,
       password,
-      country,
-      occupation,
-      Marital_status,
+      checked
     } = req.body;
 
     const hashedPassword = await bcrypt.hash(password, 12);
@@ -79,11 +77,9 @@ app.post("/register", async (req, res) => {
     const user = await registerModel.create({
       fullName,
       Email,
-      UserName,
+      userName,
       password: hashedPassword,
-      country,
-      occupation,
-      Marital_status,
+      checked,
     });
 
     const token = jwt.sign({ user_id: user._id }, process.env.JWT_SECRETE, {

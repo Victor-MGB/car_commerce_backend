@@ -17,13 +17,11 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/acura6.jpg",
       "/NewArrivalCarImage/AllCars/acura7.jpg",
     ],
-
+    rating: "3000",
+    percentage_rating: "30%",
     price: 120000,
     year: 2021,
-    mileage: 8.01,
-    color: "black",
-    fuelType: "diesel",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "35",
     availability: true,
   },
 
@@ -44,13 +42,11 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/aston5.jpg",
       "/NewArrivalCarImage/AllCars/aston.jpg",
     ],
-
+    rating: "3000",
+    percentage_rating: "30%",
     price: 180000,
     year: 2021,
-    mileage: 8.01,
-    color: "Zinc",
-    fuelType: "diesel",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "30",
     availability: true,
   },
 
@@ -70,13 +66,11 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/audi4.jpg",
       "/NewArrivalCarImage/AllCars/audi.jpg",
     ],
-
+    rating: "2000",
+    percentage_rating: "30%",
     price: 200000,
     year: 2021,
-    mileage: 9.01,
-    color: "white",
-    fuelType: "diesel",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "45",
     availability: true,
   },
 
@@ -98,13 +92,11 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/bent6.jpg",
       "/NewArrivalCarImage/AllCars/bent.jpg",
     ],
-
+    rating: "3000",
+    percentage_rating: "30%",
     price: 120000,
     year: 2023,
-    mileage: 9.01,
-    color: "black",
-    fuelType: "diesel",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "45",
     availability: true,
   },
 
@@ -125,13 +117,11 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/benz5.jpg",
       "/NewArrivalCarImage/AllCars/benz.jpg",
     ],
-
+    rating: "3000",
+    percentage_rating: "30%",
     price: 120000,
     year: 2023,
-    mileage: 9.01,
-    color: "Red",
-    fuelType: "Electric",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "45",
     availability: true,
   },
 
@@ -152,13 +142,11 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/bu6.jpg",
       "/NewArrivalCarImage/AllCars/bu.jpg",
     ],
-
+    rating: "3000",
+    percentage_rating: "30%",
     price: 175000,
     year: 2023,
-    mileage: 6,
-    color: "Blue",
-    fuelType: "Diesel",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "45",
     availability: true,
   },
 
@@ -177,13 +165,11 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/bmw3.jpg",
       "/NewArrivalCarImage/AllCars/bmw.jpg",
     ],
-
+    rating: "3000",
+    percentage_rating: "30%",
     price: 185000,
     year: 2023,
-    mileage: 8,
-    color: "White",
-    fuelType: "Electric",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "45",
     availability: true,
   },
 
@@ -207,13 +193,11 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/bug8.jpg",
       "/NewArrivalCarImage/AllCars/bug.jpg",
     ],
-
+    rating: "3000",
+    percentage_rating: "30%",
     price: 450000,
     year: 2023,
-    mileage: 11,
-    color: "Green",
-    fuelType: "Gasoline",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "50",
     availability: true,
   },
 
@@ -235,13 +219,11 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/cad.jpg",
       ,
     ],
-
+    rating: "5000",
+    percentage_rating: "50%",
     price: 155000,
     year: 2023,
-    mileage: 8,
-    color: "Black",
-    fuelType: "Diesel",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "50",
     availability: true,
   },
 
@@ -266,13 +248,11 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/chevrolet9.jpg",
       "/NewArrivalCarImage/AllCars/chevrolet.jpg",
     ],
-
+    rating: "4000",
+    percentage_rating: "40%",
     price: 155000,
     year: 2023,
-    mileage: 8,
-    color: "White",
-    fuelType: "Diesel",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "50",
     availability: true,
   },
 
@@ -292,13 +272,11 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/chrsler4.jpg",
       "/NewArrivalCarImage/AllCars/chrsler.jpg",
     ],
-
+    rating: "4000",
+    percentage_rating: "40%",
     price: 155000,
     year: 2023,
-    mileage: 8,
-    color: "White",
-    fuelType: "Diesel",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "50",
     availability: true,
   },
 
@@ -319,13 +297,11 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/cit5.jpg",
       "/NewArrivalCarImage/AllCars/cit6.jpg",
     ],
-
+    rating: "4000",
+    percentage_rating: "40%",
     price: 155000,
     year: 2023,
-    mileage: 8,
-    color: "White",
-    fuelType: "Diesel",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "50",
     availability: true,
   },
 
@@ -346,13 +322,11 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/dacia5.jpg",
       "/NewArrivalCarImage/AllCars/dacia.jpg",
     ],
-
+    rating: "4300",
+    percentage_rating: "30%",
     price: 155000,
     year: 2023,
-    mileage: 8,
-    color: "White",
-    fuelType: "Diesel",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "50",
     availability: true,
   },
 
@@ -373,13 +347,11 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/dod5.jpg",
       "/NewArrivalCarImage/AllCars/dod.jpg",
     ],
-
+    rating: "4000",
+    percentage_rating: "41%",
     price: 155000,
     year: 2023,
-    mileage: 8,
-    color: "White",
-    fuelType: "Diesel",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "52",
     availability: true,
   },
 
@@ -398,13 +370,11 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/ferrari.jpg",
       "/NewArrivalCarImage/AllCars/ferrari.jpg",
     ],
-
+    rating: "4000",
+    percentage_rating: "41%",
     price: 155000,
     year: 2023,
-    mileage: 8,
-    color: "White",
-    fuelType: "Diesel",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "51",
     availability: true,
   },
 
@@ -423,13 +393,11 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/ford1.jpg",
       "/NewArrivalCarImage/AllCars/ford.jpg",
     ],
-
+    rating: "4000",
+    percentage_rating: "41%",
     price: 155000,
     year: 2023,
-    mileage: 8,
-    color: "White",
-    fuelType: "Diesel",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "51",
     availability: true,
   },
 
@@ -450,13 +418,11 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/gmc5.jpg",
       "/NewArrivalCarImage/AllCars/gmc.jpg",
     ],
-
+    rating: "4000",
+    percentage_rating: "41%",
     price: 155000,
     year: 2023,
-    mileage: 8,
-    color: "White",
-    fuelType: "Diesel",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "51",
     availability: true,
   },
 
@@ -476,13 +442,11 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/honda4.jpg",
       "/NewArrivalCarImage/AllCars/honda.jpg",
     ],
-
+    rating: "4000",
+    percentage_rating: "41%",
     price: 155000,
     year: 2023,
-    mileage: 8,
-    color: "White",
-    fuelType: "Diesel",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "51",
     availability: true,
   },
 
@@ -506,18 +470,16 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/hyaundai.jpg",
       "/NewArrivalCarImage/AllCars/hyaund.jpg",
     ],
-
+    rating: "4000",
+    percentage_rating: "41%",
     price: 155000,
     year: 2023,
-    mileage: 8,
-    color: "blue",
-    fuelType: "Diesel",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "51",
     availability: true,
   },
 
   {
-    id: 20,
+    id: 21,
     model: " 2015",
     name: "Infiniti",
     details:
@@ -532,18 +494,16 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/inf4.jpg",
       "/NewArrivalCarImage/AllCars/inf.jpg",
     ],
-
+    rating: "4000",
+    percentage_rating: "41%",
     price: 55000,
     year: 2023,
-    mileage: 8,
-    color: "brown",
-    fuelType: "Diesel",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "51",
     availability: true,
   },
 
   {
-    id: 20,
+    id: 22,
     model: " 2019",
     name: "Jeep",
     details:
@@ -563,18 +523,16 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/jeep9.jpg",
       "/NewArrivalCarImage/AllCars/jeep.jpg",
     ],
-
+    rating: "4000",
+    percentage_rating: "41%",
     price: 455000,
     year: 2023,
-    mileage: 8,
-    color: "black",
-    fuelType: "Diesel/Electric",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "51",
     availability: true,
   },
 
   {
-    id: 20,
+    id: 23,
     model: " 2022",
     name: "Kia",
     details:
@@ -594,18 +552,16 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/kia9.jpg",
       "/NewArrivalCarImage/AllCars/kia.jpg",
     ],
-
+    rating: "4000",
+    percentage_rating: "41%",
     price: 155000,
     year: 2023,
-    mileage: 8,
-    color: "black",
-    fuelType: "Diesel/Electric",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "51",
     availability: true,
   },
 
   {
-    id: 21,
+    id: 24,
     model: " 2022",
     name: "Lamborghini",
     details:
@@ -621,18 +577,16 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/lamb5.jpg",
       "/NewArrivalCarImage/AllCars/lamb.jpg",
     ],
-
+    rating: "4000",
+    percentage_rating: "41%",
     price: 255000,
     year: 2023,
-    mileage: 8,
-    color: "white",
-    fuelType: "Diesel/Electric",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "51",
     availability: true,
   },
 
   {
-    id: 22,
+    id: 25,
     model: " 2022",
     name: "Land Rover",
     details:
@@ -647,18 +601,16 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/land4.jpg",
       "/NewArrivalCarImage/AllCars/land.jpg",
     ],
-
+    rating: "4000",
+    percentage_rating: "41%",
     price: 205000,
     year: 2023,
-    mileage: 8,
-    color: "mixed green and blue",
-    fuelType: "Diesel/Electric",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "51",
     availability: true,
   },
 
   {
-    id: 23,
+    id: 26,
     model: " 2022",
     name: "Lexus",
     details:
@@ -675,18 +627,16 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/lexus6.jpg",
       "/NewArrivalCarImage/AllCars/lexus.jpg",
     ],
-
+    rating: "4000",
+    percentage_rating: "41%",
     price: 105000,
     year: 2023,
-    mileage: 8,
-    color: "black",
-    fuelType: "Diesel",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "51",
     availability: true,
   },
 
   {
-    id: 23,
+    id: 27,
     model: " 2022",
     name: "Messarati",
     details:
@@ -699,18 +649,16 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/mas2.jpg",
       "/NewArrivalCarImage/AllCars/mas.jpg",
     ],
-
+    rating: "3000",
+    percentage_rating: "41%",
     price: 355000,
     year: 2023,
-    mileage: 8,
-    color: "black",
-    fuelType: "Electric",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "57",
     availability: true,
   },
 
   {
-    id: 24,
+    id: 28,
     model: " 2022",
     name: "Mazda",
     details:
@@ -723,18 +671,16 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/mazda.jpg",
       "/NewArrivalCarImage/AllCars/mazda1.jpg",
     ],
-
+    rating: "3000",
+    percentage_rating: "41%",
     price: 105000,
     year: 2023,
-    mileage: 8,
-    color: "black",
-    fuelType: "Electric",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "41",
     availability: true,
   },
 
   {
-    id: 25,
+    id: 29,
     model: " 2022",
     name: "Mini",
     details:
@@ -749,18 +695,16 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/mini4.jpg",
       "/NewArrivalCarImage/AllCars/mini.jpg",
     ],
-
+    rating: "3000",
+    percentage_rating: "41%",
     price: 205000,
     year: 2023,
-    mileage: 8,
-    color: "black",
-    fuelType: "gasoline",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "41",
     availability: true,
   },
 
   {
-    id: 26,
+    id: 30,
     model: " 2022",
     name: "Mitsubishi",
     details:
@@ -775,18 +719,16 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/mit4.jpg",
       "/NewArrivalCarImage/AllCars/mit.jpg",
     ],
-
+    rating: "3000",
+    percentage_rating: "41%",
     price: 205000,
     year: 2023,
-    mileage: 8,
-    color: "gray",
-    fuelType: "gasoline",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "40",
     availability: true,
   },
 
   {
-    id: 27,
+    id: 31,
     model: " 2022",
     name: "Nissan",
     details:
@@ -801,18 +743,16 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/nissan4.jpg",
       "/NewArrivalCarImage/AllCars/nissan.jpg",
     ],
-
+    rating: "3000",
+    percentage_rating: "41%",
     price: 205000,
     year: 2023,
-    mileage: 8,
-    color: "White",
-    fuelType: "gasoline",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "40",
     availability: true,
   },
 
   {
-    id: 28,
+    id: 32,
     model: " 2022",
     name: "peugeot",
     details:
@@ -826,18 +766,16 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/peu3.jpg",
       "/NewArrivalCarImage/AllCars/peu.jpg",
     ],
-
+    rating: "3000",
+    percentage_rating: "41%",
     price: 215000,
     year: 2023,
-    mileage: 8,
-    color: "White",
-    fuelType: "gasoline",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "40",
     availability: true,
   },
 
   {
-    id: 29,
+    id: 33,
     model: " 2022",
     name: "Porshe",
     details:
@@ -855,18 +793,16 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/porshe7.jpg",
       "/NewArrivalCarImage/AllCars/porshe.jpg",
     ],
-
+    rating: "3000",
+    percentage_rating: "41%",
     price: 215000,
     year: 2023,
-    mileage: 8,
-    color: "Blue",
-    fuelType: "gasoline",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "40",
     availability: true,
   },
 
   {
-    id: 30,
+    id: 34,
     model: " 2022",
     name: "Renault",
     details:
@@ -889,18 +825,16 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/ren12.jpg",
       "/NewArrivalCarImage/AllCars/ren.jpg",
     ],
-
+    rating: "3000",
+    percentage_rating: "41%",
     price: 211000,
     year: 2023,
-    mileage: 8,
-    color: "Yellow",
-    fuelType: "gasoline",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "40",
     availability: true,
   },
 
   {
-    id: 31,
+    id: 35,
     model: " 2022",
     name: "Rolls Royce",
     details:
@@ -914,18 +848,16 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/rolls3.jpg",
       "/NewArrivalCarImage/AllCars/rolls.jpg",
     ],
-
+    rating: "3000",
+    percentage_rating: "41%",
     price: 215000,
     year: 2023,
-    mileage: 8,
-    color: "black",
-    fuelType: "gasoline",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "40",
     availability: true,
   },
 
   {
-    id: 32,
+    id: 36,
     model: " 2022",
     name: "Seat",
     details:
@@ -942,18 +874,16 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/seat6.jpg",
       "/NewArrivalCarImage/AllCars/seat.jpg",
     ],
-
+    rating: "3000",
+    percentage_rating: "41%",
     price: 95000,
     year: 2023,
-    mileage: 8,
-    color: "ash",
-    fuelType: "gasoline",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "40",
     availability: true,
   },
 
   {
-    id: 33,
+    id: 37,
     model: " 2022",
     name: "Skoda",
     details:
@@ -968,18 +898,16 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/skoda4.jpg",
       "/NewArrivalCarImage/AllCars/skoda.jpg",
     ],
-
+    rating: "3000",
+    percentage_rating: "41%",
     price: 95000,
     year: 2023,
-    mileage: 8,
-    color: "ash",
-    fuelType: "gasoline",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "40",
     availability: true,
   },
 
   {
-    id: 34,
+    id: 38,
     model: " 2022",
     name: "Subaru",
     details:
@@ -1000,18 +928,16 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/subaru10.jpg",
       "/NewArrivalCarImage/AllCars/subaru.jpg",
     ],
-
+    rating: "3000",
+    percentage_rating: "41%",
     price: 95000,
     year: 2023,
-    mileage: 8,
-    color: "white",
-    fuelType: "gasoline",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "40",
     availability: true,
   },
 
   {
-    id: 35,
+    id: 39,
     model: " 2022",
     name: "Tesla",
     details:
@@ -1030,18 +956,16 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/tesla8.jpg",
       "/NewArrivalCarImage/AllCars/tesla.jpg",
     ],
-
+    rating: "3000",
+    percentage_rating: "41%",
     price: 655000,
     year: 2023,
-    mileage: 15,
-    color: "Black",
-    fuelType: "Electric",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "40",
     availability: true,
   },
 
   {
-    id: 36,
+    id: 40,
     model: " 2022",
     name: "Toyota",
     details:
@@ -1055,18 +979,16 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/toyota3.jpg",
       "/NewArrivalCarImage/AllCars/toyota.jpg",
     ],
-
+    rating: "3000",
+    percentage_rating: "41%",
     price: 655000,
     year: 2023,
-    mileage: 15,
-    color: "Blue",
-    fuelType: "diesel",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "40",
     availability: true,
   },
 
   {
-    id: 37,
+    id: 41,
     model: " 2017",
     name: "Volks Wagen",
     details:
@@ -1080,18 +1002,16 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/volks3.jpg",
       "/NewArrivalCarImage/AllCars/volks.jpg",
     ],
-
+    rating: "3000",
+    percentage_rating: "41%",
     price: 50000,
     year: 2023,
-    mileage: 15,
-    color: "Red",
-    fuelType: "diesel",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "40",
     availability: true,
   },
 
   {
-    id: 38,
+    id: 42,
     model: " 2017",
     name: "Volvo",
     details:
@@ -1108,18 +1028,16 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/volvo6.jpg",
       "/NewArrivalCarImage/AllCars/volvo.jpg",
     ],
-
+    rating: "3000",
+    percentage_rating: "41%",
     price: 150000,
     year: 2023,
-    mileage: 15,
-    color: "White",
-    fuelType: "diesel",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "40",
     availability: true,
   },
 
   {
-    id: 39,
+    id: 43,
     model: "4matic",
     name: "mercedes benz",
     details: "Lorem ipsum...",
@@ -1131,14 +1049,11 @@ const allCars = [
       "/NewArrivalCarImage/AllCars/4matic.jpg",
       "/NewArrivalCarImage/AllCars/4matic.jpg",
     ],
-
+    rating: "3000",
+    percentage_rating: "41%",
     price: 250000,
     year: 2022,
-    mileage: 30000,
-    color: "red",
-    fuelType: "Gasoline",
-    transmission: "Automatic",
-    features: "Air conditioning, Bluetooth, Backup camera",
+    quantity: "40",
     availability: true,
   },
 ];

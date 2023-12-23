@@ -1,15 +1,12 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const RegisterModelSchema = mongoose.Schema({
-    fullName:String,
-    Email:String,
-    UserName:String,
-    password: String,
-    country: String,
-    occupation:String,
-    Marital_status: String
-    
-})
+  fullName: String,
+  email: String,
+  userName: String,
+  password: String,
+  checked: { type: Boolean, default: true },
+});
 
-const registerModel =  mongoose.model('signUp',RegisterModelSchema)
-module.exports = registerModel
+const RegisterModel = mongoose.model("signUp", RegisterModelSchema);
+module.exports = RegisterModel;
