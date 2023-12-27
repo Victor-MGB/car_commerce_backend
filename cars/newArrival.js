@@ -9,7 +9,6 @@ const newArrival = [
 
     images: [
       "/NewArrivalCarImage/Phantom.jpg",
-      "/NewArrivalCarImage/Phantom2.jpg",
       "/NewArrivalCarImage/RoyceRollsPhantom.jpg",
     ],
 
@@ -18,7 +17,7 @@ const newArrival = [
     price: 250000,
     year: 2022,
     mileage: 30000,
-    quantity: "15",
+    quantity: "1",
     availability: true,
   },
 
@@ -39,7 +38,7 @@ const newArrival = [
     percentage_rating: "31%",
     price: 500000,
     year: 2023,
-    quantity: "35",
+    quantity: "1",
     availability: true,
   },
 
@@ -60,7 +59,7 @@ const newArrival = [
     percentage_rating: "31%",
     price: 100000000,
     year: 2030,
-    quantity: "25",
+    quantity: "1",
     availability: false,
   },
 
@@ -81,7 +80,7 @@ const newArrival = [
     percentage_rating: "11%",
     price: 474900,
     year: 2022,
-    quantity: "15",
+    quantity: "1",
     availability: true,
   },
 
@@ -101,7 +100,7 @@ const newArrival = [
     percentage_rating: "10%",
     price: 150000,
     year: 2022,
-    quantity: "55",
+    quantity: "1",
     availability: true,
   },
 
@@ -121,7 +120,7 @@ const newArrival = [
     percentage_rating: "10%",
     price: 120900,
     year: 2022,
-    quantity: "45",
+    quantity: "1",
     availability: true,
   },
 
@@ -141,7 +140,7 @@ const newArrival = [
     rating: "2000",
     percentage_rating: "20%",
     price: 87000,
-    quantity: "65",
+    quantity: "1",
     availability: true,
   },
 
@@ -161,7 +160,7 @@ const newArrival = [
     percentage_rating: "15%",
     price: 450000,
     year: 2022,
-    quantity: "65",
+    quantity: "1",
     availability: true,
   },
 
@@ -181,7 +180,7 @@ const newArrival = [
     percentage_rating: "67%",
     price: 240000,
     year: 2024,
-    quantity: "35",
+    quantity: "1",
     availability: true,
   },
 
@@ -201,7 +200,7 @@ const newArrival = [
     percentage_rating: "47%",
     price: 135000,
     year: 2023,
-    quantity: "25",
+    quantity: "1",
     availability: true,
   },
 
@@ -220,7 +219,7 @@ const newArrival = [
     percentage_rating: "47%",
     price: 187000,
     year: 2022,
-    quantity: "35",
+    quantity: "1",
     availability: true,
   },
 
@@ -241,7 +240,7 @@ const newArrival = [
     percentage_rating: "47%",
     price: 100000,
     year: 2022,
-    quantity: "35",
+    quantity: "1",
     availability: true,
   },
 
@@ -260,7 +259,7 @@ const newArrival = [
     percentage_rating: "30%",
     price: 300000,
     year: 2024,
-    quantity: "35",
+    quantity: "1",
     availability: true,
   }, 
 
@@ -280,7 +279,7 @@ const newArrival = [
     percentage_rating: "30%",
     price: 300000,
     year: 2024,
-    quantity: "35",
+    quantity: "1",
     availability: true,
   },
 
@@ -300,7 +299,7 @@ const newArrival = [
     percentage_rating: "40%",
     price: 350000,
     year: 2023,
-    quantity: "45",
+    quantity: "1",
     availability: true,
   },
 
@@ -321,7 +320,7 @@ const newArrival = [
     percentage_rating: "40%",
     price: 200000,
     year: 2023,
-    quantity: "45",
+    quantity: "1",
     availability: true,
   },
 
@@ -342,7 +341,7 @@ const newArrival = [
     percentage_rating: "40%",
     price: 300000,
     year: 2023,
-    quantity: "35",
+    quantity: "1",
     availability: true,
   },
 
@@ -362,7 +361,7 @@ const newArrival = [
     percentage_rating: "30%",
     price: 200000,
     year: 2023,
-    quantity: "65",
+    quantity: "1",
     availability: true,
   },
 
@@ -382,7 +381,7 @@ const newArrival = [
     percentage_rating: "50%",
     price: 250000,
     year: 2023,
-    quantity: "45",
+    quantity: "1",
     availability: true,
   },
 
@@ -402,7 +401,7 @@ const newArrival = [
     percentage_rating: "30%",
     price: 200000,
     year: 2023,
-    quantity: "65",
+    quantity: "1",
     availability: true,
   },
 
@@ -422,7 +421,7 @@ const newArrival = [
     percentage_rating: "30%",
     price: 200000,
     year: 2023,
-    quantity: "65",
+    quantity: "1",
     availability: true,
   },
 
@@ -442,7 +441,7 @@ const newArrival = [
     percentage_rating: "30%",
     price: 200000,
     year: 2023,
-    quantity: "65",
+    quantity: "1",
     availability: true,
   },
 
@@ -462,7 +461,7 @@ const newArrival = [
     percentage_rating: "30%",
     price: 200000,
     year: 2023,
-    quantity: "65",
+    quantity: "1",
     availability: true,
   },
 
@@ -483,7 +482,7 @@ const newArrival = [
     percentage_rating: "30%",
     price: 250000,
     year: 2021,
-    quantity: "65",
+    quantity: "1",
     availability: true,
   },
 
@@ -504,7 +503,7 @@ const newArrival = [
     percentage_rating: "30%",
     price: 250000,
     year: 2021,
-    quantity: "65",
+    quantity: "1",
     availability: true,
   },
 
@@ -524,7 +523,7 @@ const newArrival = [
     percentage_rating: "20%",
     price: 270000,
     year: 2021,
-    quantity: "35",
+    quantity: "1",
     availability: true,
   },
 
@@ -544,7 +543,7 @@ const newArrival = [
     percentage_rating: "20%",
     price: 270000,
     year: 2021,
-    quantity: "35",
+    quantity: "1",
     availability: true,
   },
 
@@ -564,7 +563,7 @@ const newArrival = [
     percentage_rating: "20%",
     price: 270000,
     year: 2021,
-    quantity: "35",
+    quantity: "1",
     availability: true,
   },
 
@@ -584,7 +583,7 @@ const newArrival = [
     percentage_rating: "20%",
     price: 270000,
     year: 2021,
-    quantity: "35",
+    quantity: "1",
     availability: true,
   },
 
@@ -605,7 +604,7 @@ const newArrival = [
     percentage_rating: "30%",
     price: 270000,
     year: 2021,
-    quantity: "55",
+    quantity: "1",
     availability: true,
   },
 
@@ -625,7 +624,7 @@ const newArrival = [
     percentage_rating: "20%",
     price: 270000,
     year: 2021,
-    quantity: "35",
+    quantity: "1",
     availability: true,
   },
 
@@ -645,7 +644,7 @@ const newArrival = [
     percentage_rating: "30%",
     price: 270000,
     year: 2021,
-    quantity: "35",
+    quantity: "1",
     availability: true,
   },
 ];
