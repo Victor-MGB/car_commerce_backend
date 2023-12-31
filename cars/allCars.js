@@ -21,7 +21,7 @@ const allCars = [
     percentage_rating: "30%",
     price: 120000,
     year: 2021,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -46,7 +46,7 @@ const allCars = [
     percentage_rating: "30%",
     price: 180000,
     year: 2021,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -70,7 +70,7 @@ const allCars = [
     percentage_rating: "30%",
     price: 200000,
     year: 2021,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -96,7 +96,7 @@ const allCars = [
     percentage_rating: "30%",
     price: 120000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -121,7 +121,7 @@ const allCars = [
     percentage_rating: "30%",
     price: 120000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -146,7 +146,7 @@ const allCars = [
     percentage_rating: "30%",
     price: 175000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -169,7 +169,7 @@ const allCars = [
     percentage_rating: "30%",
     price: 185000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -197,7 +197,7 @@ const allCars = [
     percentage_rating: "30%",
     price: 450000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -223,7 +223,7 @@ const allCars = [
     percentage_rating: "50%",
     price: 155000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -252,7 +252,7 @@ const allCars = [
     percentage_rating: "40%",
     price: 155000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -276,7 +276,7 @@ const allCars = [
     percentage_rating: "40%",
     price: 155000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -301,7 +301,7 @@ const allCars = [
     percentage_rating: "40%",
     price: 155000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -326,7 +326,7 @@ const allCars = [
     percentage_rating: "30%",
     price: 155000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -351,7 +351,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 155000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -374,7 +374,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 155000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -397,7 +397,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 155000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -422,7 +422,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 155000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -446,7 +446,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 155000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -474,7 +474,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 155000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -498,7 +498,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 55000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -527,7 +527,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 455000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -556,7 +556,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 155000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -581,7 +581,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 255000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -605,7 +605,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 205000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -631,7 +631,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 105000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -653,7 +653,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 355000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -675,7 +675,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 105000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -699,7 +699,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 205000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -723,7 +723,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 205000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -747,7 +747,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 205000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -770,7 +770,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 215000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -797,7 +797,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 215000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -829,7 +829,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 211000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -852,7 +852,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 215000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -878,7 +878,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 95000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -902,7 +902,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 95000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -932,7 +932,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 95000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -960,7 +960,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 655000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -983,7 +983,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 655000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -1006,7 +1006,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 50000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -1032,7 +1032,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 150000,
     year: 2023,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 
@@ -1053,7 +1053,7 @@ const allCars = [
     percentage_rating: "41%",
     price: 250000,
     year: 2022,
-    quantity: "1",
+    quantity: 1,
     availability: true,
   },
 ];
