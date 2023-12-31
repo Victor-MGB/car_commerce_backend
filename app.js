@@ -95,26 +95,34 @@ app.post("/register", async (req, res) => {
 
 app.post("/login", async (req, res) => {
   try {
-    const { Email, password } = req.body;
+    const { email, password } = req.body;
 
-    const user = await registerModel.findOne({ Email });
+    const user = await registerModel.findOne({ email: email.toLowerCase() });
 
     if (user) {
       const passwordMatch = await bcrypt.compare(password, user.password);
 
       if (passwordMatch) {
-        res.json({ message: "Login successful", name: user.fullName });
+        res
+          .status(200)
+          .json({ message: "Login successful", name: user.fullName });
       } else {
-        res.json({ message: "Invalid password" });
+        res.status(401).json({ message: "Invalid credentials" });
       }
     } else {
-      res.json({ message: "Nonexistent record" });
+      res.status(404).json({ message: "Invalid credentials" });
     }
-} catch (error) {
-  console.error("Error during login:", error);
-  res.status(500).json({ message: "An error occurred during login", error: error.message });
-}
+  } catch (error) {
+    console.error("Error during login:", error);
+    res
+      .status(500)
+      .json({
+        message: "An error occurred during login",
+        error: error.message,
+      });
+  }
 });
+
 
   app.get('/allcars',(req,res)=>{
     res.json(allCars);
