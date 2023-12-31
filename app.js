@@ -64,13 +64,7 @@ connectDB();
 
 app.post("/register", async (req, res) => {
   try {
-    const {
-      fullName,
-      Email,
-      userName,
-      password,
-      checked
-    } = req.body;
+    const { fullName, Email, userName, password, checked } = req.body;
 
     const hashedPassword = await bcrypt.hash(password, 12);
 
@@ -82,15 +76,25 @@ app.post("/register", async (req, res) => {
       checked,
     });
 
-    const token = jwt.sign({ user_id: user._id }, process.env.JWT_SECRETE, {
+    const token = jwt.sign({ user_id: user._id }, process.env.JWT_SECRET, {
       expiresIn: "5h",
     });
 
-    res.json({ message: "Registration successful", token });
+    res.status(201).json({ message: "Registration successful", token });
   } catch (error) {
-    res.status(500).json({ message: "An error occurred during registration" });
+    console.error("Error during registration:", error);
+
+    // Check for duplicate key error (email/username already exists)
+    if (error.code === 11000) {
+      res.status(400).json({ message: "Email or username already exists" });
+    } else {
+      res
+        .status(500)
+        .json({ message: "An error occurred during registration" });
+    }
   }
 });
+
 
 
 app.post("/login", async (req, res) => {
@@ -114,14 +118,13 @@ app.post("/login", async (req, res) => {
     }
   } catch (error) {
     console.error("Error during login:", error);
-    res
-      .status(500)
-      .json({
-        message: "An error occurred during login",
-        error: error.message,
-      });
+    res.status(500).json({
+      message: "An error occurred during login",
+      error: error.message,
+    });
   }
 });
+
 
 
   app.get('/allcars',(req,res)=>{
