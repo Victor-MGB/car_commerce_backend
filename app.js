@@ -110,9 +110,10 @@ app.post("/login", async (req, res) => {
     } else {
       res.json({ message: "Nonexistent record" });
     }
-  } catch (error) {
-    res.status(500).json({ message: "An error occurred during login" });
-  }
+} catch (error) {
+  console.error("Error during login:", error);
+  res.status(500).json({ message: "An error occurred during login", error: error.message });
+}
 });
 
   app.get('/allcars',(req,res)=>{
