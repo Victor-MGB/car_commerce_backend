@@ -93,28 +93,28 @@ app.post("/register", async (req, res) => {
 });
 
 
-app.post("/login", async (req, res) => {
-  try {
-    const { Email, password } = req.body;
+app.post('/login',async(req,res)=>{
+  const {email,password} = req.body;
+  const user = await registerModel.findOne({email})
+  if(!user){
+    return res.status(404).json({message: "user does not exist"});
+  }
 
-    const user = await registerModel.findOne({ Email });
+  const isPasswordCorrect = await bcrypt.compare(password,user.password);
 
-    if (user) {
-      const passwordMatch = await bcrypt.compare(password, user.password);
+  if(isPasswordCorrect)
+  return res.status(400).json({message:"invalid credentiaLs"});
 
-      if (passwordMatch) {
-        res.json({ message: "Login successful", name: user.fullName });
-      } else {
-        res.json({ message: "Invalid password" });
-      }
-    } else {
-      res.json({ message: "Nonexistent record" });
-    }
-} catch (error) {
-  console.error("Error during login:", error);
-  res.status(500).json({ message: "An error occurred during login", error: error.message });
-}
-});
+  const token = jwt.sign({user_id: user._id},process.env.JWT_SECRETE,{
+    expiresIn:"5h"
+  })
+
+  res.status(200).json({
+    status:"success",
+    token,
+    user
+  })
+})
 
   app.get('/allcars',(req,res)=>{
     res.json(allCars);
