@@ -8,5 +8,5 @@ const RegisterModelSchema = mongoose.Schema({
   checked: { type: Boolean, default: true },
 });
 
-const RegisterModel = mongoose.model("signUp", RegisterModelSchema);
+const RegisterModel = mongoose.model("register", RegisterModelSchema);
 module.exports = RegisterModel;
